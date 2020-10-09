@@ -50,10 +50,17 @@ void loop()
         delay(100);
       }
     }
+    else
+    {
+      for (byte i = 0; i < 8; i++)
+      {
+        digitalWrite(led[i], LOW);
+      }
+    }
   }
 }
-void Funktion_StartStop ()
-{
-  merkerStartStop = !merkerStartStop;
-}
+  void Funktion_StartStop ()
+  {
+    merkerStartStop = !merkerStartStop;
+  }
 
